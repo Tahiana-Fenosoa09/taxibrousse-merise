@@ -1,0 +1,92 @@
+PROG3 : 
+
+ Implémentation D'API REST (Java Spring Boot et PostgreSQL )
+
+1. De la base de données a L' API REST 
+2. fiche du cours (48h -> travail encadrés , 40h -> Travail perso , 6 -> modules , 5 -> ) 
+3. Philosophie du cours "Avec l'IA , écrire du code n'est plus ce qui bloque . " 
+	Principes du cours : 
+		a . le probleme avant l'outil 
+		b . A la main , puis avec l'outil 
+		c . Spécifier , faire producire , vérifier 
+		d . Une architecture qui se mesure 
+		e . Toute ligne rendue doit pouvoir etre expliquée 
+
+S1 ACID 
+S2 role d'un driver et d'une interface d'accès aux données 
+S3 Justification d'un schéma 
+
+4. Compétences transférables : 
+	T1 - lire et critiquer du code 
+	T2 - Utiliser L'IA avec méthode 
+	T3 - Transposer une solution 
+
+5.Évaluation
+
+	1.Evaluation : INDIVIDUELLE ET SANS IA 
+
+compréhension 50% 
+
+- 25% QCM de module 
+
+- 25% Oral individuel 
+
+	2. Evaluation : PRATIQUE 50% 
+
+l'épreuve pratique individuelle 
+
+- 15% sans IA , en équipe
+
+- 15% Jalons , avec IA 
+- 20% Projet final , avec IA 
+
+LMS : learning Management Service
+
+
+
+Révision MERISE : 
+
+=> System d'information 
+
+MCD (modèle conceptuelle de données)
+MLD (modèle logique des données)
+MPD (modèle physique des données)
+
+"Alternatives" à MERISE comme UML et Entité-associtation 
+
+cahier de charge , définis quel est le besoin (entre le client et le préstataire) 
+
+**RG2 (règle de gestion 2) 
+
+MERISE : 
+
+LIVRE(1,1) =(appartenir)= (0,n)Categorie
+
+UML : 
+
+LIVRE(0..*) =(appartient a)= (1)categorie 
+
+**Le dictionnaire données : 
+
+Toutes les données élementaires du système , chacune une seule fois , avant tout dessin . 
+
+**Le dictionnaire dois etre Épurer . 
+
+**Des dépendances fonctionnelles au MCD : 
+
+exemple : A => B : connaitre A  donne une seule valeur de B . 
+
+**Lire une cardinalité : 
+
+cardinalité : couple (min, max) 
+
+**Les formes d'associtations : 
+
+un a plusieur (x,1)-(x,n) 
+
+**A noter : Une table n'as pas forcément besoin d'une clef primaire . 
+
+**Fiche de mémo des règles de passage : 
+	
+
+

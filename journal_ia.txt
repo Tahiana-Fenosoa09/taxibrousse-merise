@@ -1,0 +1,30 @@
+Journal IA : 
+
+Moi : Dans un systeme de SGBDR . Supposons le contexte suivant dans un system de gestion
+ de Taxibrousse, pour chaque départ nous allons assigné un chauffeur et un receveur 
+ou assistant pour superviser les chose qui se passe durant le trajet . 
+Receveur et chaffeur ont des attribut commun et aussi ont des attributs qui sont 
+propres a eux . Est ce que tu jugerais Chauffeur et Receveur comme différente tables ? 
+ou bien un seule table commune avec un attribut type et tous les attributs des deux receveur
+ et chauffeur seront tous deux inclus dans la table mais selon le type les attribut seront vide ?
+
+
+IA : Dans ton contexte de gestion de taxi-brousse, je te recommande plutôt une table 
+commune Personnel avec deux tables spécialisées Chauffeur et Receveur.
+C'est ce qu'on appelle en conception de bases de données la généralisation / spécialisation 
+(héritage).
+
+Moi : Supposons un certain context que tu vas donner . Quelque chose de pas tres long  . 
+Montre moi les regle de gestion et dictionnaire de données . Un vrai scenario pour comprendre les méthodes pour faire 
+ses 2 choses nécessaire en Entreprises .
+
+IA : 
+Exemple scénario : Bibliotheque Privée 
+
+Qu'est-ce qu'une règle de gestion ?
+Une règle de gestion est une phrase qui décrit une contrainte, une obligation ou un fonctionnement imposé par l'entreprise à son activité.
+Exemple : 
+RG01 Chaque adhérent possède un identifiant unique.
+
+Qu'est-ce qu'un dictionnaire de données ?
+Le dictionnaire de données est un document qui décrit précisément les données manipulées par le système d'information.

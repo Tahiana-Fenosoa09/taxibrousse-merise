@@ -1,0 +1,36 @@
+
+Dictionnaire de données : 
+
+CODE 			SIGNIFICATION						TYPE 	TAILLE	NATURE	REGLE/CONTRAINTE	
+
+nom_coopérative 	Nom de la coopérative 					A	200	E	obligatoire
+numéro_agrément		Numéro d'agrément de la coopérative			AN	-	E	unique,obligatoire
+immatriculation 	Immatriculation du véhicule 				AN	200	E	unique,obligatoire
+marque 			Marque du véhicule 					AN	200	E	obligatoire
+modèle			Modèle du véhicule					AN	-	E	obligatoire
+année_mise_en_circulation	L'année de mise en circulation du véhicule 	AN	200	E	obligatoire
+nom_propriétaire	Nom du propriétaire 					A	200	E	obligatoire
+téléphone_propriétaire	Téléphone du propriétaire 				N	200	E	obligatoire,format selon le pays
+code_ligne		Code de la ligne 					AN	200	E	unique,obligatoire
+ville_départ		Ville de départ de la ligne 				A	200	E	obligatoire
+ville_arrivé		Ville d'arrivé de la ligne				A	200	E	obligatoire
+distance		Distance de la ligne					A	-	E	obligatoire, en km
+tarif			Tarif soummis a la ligne				A	-	E	obligatoire, en Ariary
+nom			Nom d'un personel de la coopérative 			A	200	E	obligatoire
+prénom			Prénom d'un personel de la coopérative 			A	200	E	facultatif
+téléphone 		Téléphone d'un personel de la coopérative 		N	-	E	obligatoire,format selon le pays
+date_embauche 		Date embauche d'un personel 				A	-	E	obligatoire, format date
+numéro_permis		Numéro de permis d'un chauffeur 			N	-	E	obligatoire, format selon le pays
+date_obtention 		Date d'obtention du permis d'un chauffeur 		A	-	E	obligatoire, format date
+langue_additionel	Langue additionnel d'un	receveur 			A	200	E	facultatif
+nom_passager		Nom d'un passager 					A	200	E	obligatoire
+téléphone_passager	Téléphone d'un passager 				N	-	E	obligatoire, format selon le pays
+départ_précis		Le départ précis d'une reservation 			A	-	E	obligatoire , fk
+numéro_siege		Numéro de siege d'une reservation 			N	200	E	obligatoire
+ville_destination	Ville de destination d'un reservation			A	200	E	obligatoire 
+date_paiement		Date d'un paiement 					AN	-	E	obligatoire, format date
+mode_paiement		Mode d'un paiement 					A	-	E	mobile money | virement | cash
+montant_paiement	Montant d'un paiement 					N	-	E	obligatoire ,en Ariary
+reste_a_payer		Reste a payer d'un paiement 				A	-	E	obligatoire, en Ariary , par défaut 0
+numéro_étiquettes 	Numéro_étiquette d'un bagages				N	200	E	unique , obligatoire
+poids_bagage		Poids d'un bagage 					N	200	E	obligatoire

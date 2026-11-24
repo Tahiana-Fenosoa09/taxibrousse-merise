@@ -1,0 +1,27 @@
+Règles de Gestion : 
+
+RG1 : Un véhicule ne travaille que pour une seule coopérative .	Une coopérative 
+peux etre identifié par son numéro d'agrément qui est unique . 
+
+RG2 : Un voyageur/passager peux s'arreter a un arret se trouvant sur la lignes . 
+
+RG3 : Un voyageur/passager peux faire plusieur réservation et une réservation ne concernes qu'un seul 
+voyageur/passager . 
+
+RG4 : Un voyageur/passager peux faire plusieur paiement dont le premier seras une avance de la 
+réservation et le reste pourras etre réglé durant le trajet .  
+
+RG5 : Un chauffeur peux encadrer une meme classe chauffeur . Donc chauffeur peux parenté lui meme , 
+et prend sa propre une clé étrangère en lui meme . 
+
+RG6 : Un départ peux avoir un a plusieur chauffeur selon la longeur de la ligne , un seul réceveur , 
+et un seule véhicule .  
+
+RG7 : Une ligne peux etre inclus dans plusieur départ et un départ ne concerne qu'une seule ligne . 
+
+RG8 : Un propriétaire peux confié plusieur véhicule et un véhicule n'as qu'un propriétaire . 
+
+RG10 :  Un bagage appartient as un seul passager et un passager peux avoir plusieur bagage . 
+
+RG11 : Un passager as droit a 20 kg , au dela de 20 kg le passager seras chargé de frais en plus selon 
+le poids additionnel . 

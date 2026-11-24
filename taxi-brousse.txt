@@ -1,0 +1,86 @@
+Coopérative(nom,numéro_agrément )
+Véhicule(immatriculation,marque , modele , année_mise_en_circulation , nombre_place )
+Propriétaire(nom, téléphone) 
+Lignes (code,ville_départ,ville_arrivée,distance,tarif)
+Chauffeur(nom,prénom,téléphone,date_embauche,numéro_permis,date_obtention)
+Receveur(nom,prénom,téléphone,date_embauche,langue_additionnel)
+Départ(ligne,date,heure_départ,véhicule,receveur,chauffeur)
+Passager(nom,numéro_téléphone,fidélité,historique_de_fidélité)
+Réservation(départ_précis,numéro_siege,ville_destination)
+Paiement(date,montant,mode,reste_a_payer)
+Bagage(numéro_étiquette,poids)
+** savoir combien de place il reste sur un départ **
+** pour longues lignes peux avoir un second chauffeur ** 
+** véhicule fait peux faire plusieur départ ** 
+** nouveau_chaffeur encadré par des comfirmé_chauffeur pendant 1 mois **
+** comfirmé_chauffeur peux encadrer plusieur débutants **
+** propriétaire peux confier plusieur voiture **
+** véhicule pour une seule coopérative **
+
+Règles de Gestion : 
+
+RG1 : Un véhicule ne travaille que pour une seule coopérative .	Une coopérative 
+peux etre identifié par son numéro d'agrément qui est unique . 
+
+RG2 : Un voyageur/passager peux s'arreter a un arret se trouvant sur la lignes . 
+
+RG3 : Un voyageur/passager peux faire plusieur réservation et une réservation ne concernes qu'un seul 
+voyageur/passager . 
+
+RG4 : Un voyageur/passager peux faire plusieur paiement dont le premier seras une avance de la 
+réservation et le reste pourras etre réglé durant le trajet .  
+
+RG5 : Un chauffeur peux encadrer une meme classe chauffeur . Donc chauffeur peux parenté lui meme , 
+et prend sa propre une clé étrangère en lui meme . 
+
+RG6 : Un départ peux avoir un a plusieur chauffeur selon la longeur de la ligne , un seul réceveur , 
+et un seule véhicule .  
+
+RG7 : Une ligne peux etre inclus dans plusieur départ et un départ ne concerne qu'une seule ligne . 
+
+RG8 : Un propriétaire peux confié plusieur véhicule et un véhicule n'as qu'un propriétaire . 
+
+RG10 :  Un bagage appartient as un seul passager et un passager peux avoir plusieur bagage . 
+
+RG11 : Un passager as droit a 20 kg , au dela de 20 kg le passager seras chargé de frais en plus selon 
+le poids additionnel . 
+
+
+
+Dictionnaire de données : 
+
+CODE 			SIGNIFICATION						TYPE 	TAILLE	NATURE	REGLE/CONTRAINTE	
+
+nom_coopérative 	Nom de la coopérative 					A	200	E	obligatoire
+numéro_agrément		Numéro d'agrément de la coopérative			AN	-	E	unique,obligatoire
+immatriculation 	Immatriculation du véhicule 				AN	200	E	unique,obligatoire
+marque 			Marque du véhicule 					AN	200	E	obligatoire
+modèle			Modèle du véhicule					AN	-	E	obligatoire
+année_mise_en_circulation	L'année de mise en circulation du véhicule 	AN	200	E	obligatoire
+nom_propriétaire	Nom du propriétaire 					A	200	E	obligatoire
+téléphone_propriétaire	Téléphone du propriétaire 				N	200	E	obligatoire,format selon le pays
+code_ligne		Code de la ligne 					AN	200	E	unique,obligatoire
+ville_départ		Ville de départ de la ligne 				A	200	E	obligatoire
+ville_arrivé		Ville d'arrivé de la ligne				A	200	E	obligatoire
+distance		Distance de la ligne					A	-	E	obligatoire, en km
+tarif			Tarif soummis a la ligne				A	-	E	obligatoire, en Ariary
+nom			Nom d'un personel de la coopérative 			A	200	E	obligatoire
+prénom			Prénom d'un personel de la coopérative 			A	200	E	facultatif
+téléphone 		Téléphone d'un personel de la coopérative 		N	-	E	obligatoire,format selon le pays
+date_embauche 		Date embauche d'un personel 				A	-	E	obligatoire, format date
+numéro_permis		Numéro de permis d'un chauffeur 			N	-	E	obligatoire, format selon le pays
+date_obtention 		Date d'obtention du permis d'un chauffeur 		A	-	E	obligatoire, format date
+langue_additionel	Langue additionnel d'un	receveur 			A	200	E	facultatif
+nom_passager		Nom d'un passager 					A	200	E	obligatoire
+téléphone_passager	Téléphone d'un passager 				N	-	E	obligatoire, format selon le pays
+départ_précis		Le départ précis d'une reservation 			A	-	E	obligatoire , fk
+numéro_siege		Numéro de siege d'une reservation 			N	200	E	obligatoire
+ville_destination	Ville de destination d'un reservation			A	200	E	obligatoire 
+date_paiement		Date d'un paiement 					AN	-	E	obligatoire, format date
+mode_paiement		Mode d'un paiement 					A	-	E	mobile money | virement | cash
+montant_paiement	Montant d'un paiement 					N	-	E	obligatoire ,en Ariary
+reste_a_payer		Reste a payer d'un paiement 				A	-	E	obligatoire, en Ariary , par défaut 0
+numéro_étiquettes 	Numéro_étiquette d'un bagages				N	200	E	unique , obligatoire
+poids_bagage		Poids d'un bagage 					N	200	E	obligatoire
+
+			

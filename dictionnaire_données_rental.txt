@@ -1,0 +1,28 @@
+CODE 			SIGNIFICATION						TYPE 	TAILLE 	NATURE  RÈGLE/CONTRAINTE
+
+id_agence		Identifiant de L'agence					N 	- 	E	unique
+numero_agence		Numero de L'agence					N	- 	E	unique , obligatoire
+nom_agence		Nom ou intitule de L'agence				A 	200	E 	unique
+ville 			Ville ou se situe L'agence				A	50 	E 	unique , obligatoire
+telephone_agence	Telephone de L'agence					N	- 	E 	unique , obligatoire
+immatriculation		Immatricule du véhicule					AN	50 	E	unique , obligatoire
+marque_vehicule 	Marque du véhicule					A	50	E 	une valuer peux se répéter	
+modele_vehicule		Modele du véhicule					AN	200 	E 	une valuer peux se répéter
+annee_mise_enroute_vehicule	Année de mise en route du véhicule		AN 	50	E	une valeur peux se répéter
+kilometrage		Kilometrage du véhicule					N 	- 	E	en km
+tarif_journalier	Tarif journalier d'une location				N 	- 	E	
+numero_client		Numero ou identifiant attribué au client		N 	-	E	en Ariary
+nom_client		Nom du client						A	-	E	obligatoire
+prenom_client		Prenom du client					A	-	E	facultatif
+telephone_client	Telephone du client					N	50	E	unique , obligatoire	
+numero_permis		Numero de permis de conduire du client			N	50	E	unique , obligatoire
+date_début_location	Date de début de la location				AN	50	E	obligatoire
+date_fin_location	Date de fin de la location				AN	50	E	obligatoire
+date_retour_location	Date de retour du véhicule a L'agence			AN	50	E	obligatoire
+kilometrage_départ	Nombre de Kilometrage aux début de la location		N	50	E	obligatoire
+kilometrage_retour	Nombre de Kilometrage au retour a L'agence		N	50	E	obligatoire
+date_declaration	Date de déclaration d'un conducteur d'un véhicule	AN	50	E	obligatoire 
+
+ÉCARTÉE DU MCD : 
+montant_location	Montant total de la location apres le séjour 		N	-	E	calcul par requete
+
